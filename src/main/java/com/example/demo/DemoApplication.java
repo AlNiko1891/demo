@@ -15,8 +15,6 @@ import java.io.PrintStream;
 @SpringBootApplication
 public class DemoApplication {
 	public static void main(String[] args) {
-		new SpringApplicationBuilder(DemoApplication .class)
-				.web(WebApplicationType.NONE)
-				.run(args);
+		SpringApplication.run(DemoApplication.class, args);
 	}
 }
